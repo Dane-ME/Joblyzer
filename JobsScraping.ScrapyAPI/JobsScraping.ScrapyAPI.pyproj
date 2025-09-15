@@ -1,0 +1,100 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>24737f0e-6113-4c87-8a7b-3d460a0fa612</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>api/main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>JobsScraping.ScrapyAPI</Name>
+    <RootNamespace>JobsScraping.ScrapyAPI</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="api\main.py" />
+    <Compile Include="api\routes\cvs.py" />
+    <Compile Include="api\routes\jobs.py" />
+    <Compile Include="api\routes\matching.py" />
+    <Compile Include="api\routes\results.py" />
+    <Compile Include="api\routes\scraping.py" />
+    <Compile Include="api\routes\users.py" />
+    <Compile Include="api\routes\__init__.py" />
+    <Compile Include="api\schemas.py" />
+    <Compile Include="api\__init__.py" />
+    <Compile Include="configs\config.py" />
+    <Compile Include="configs\__init__.py" />
+    <Compile Include="database\crud.py" />
+    <Compile Include="database\db.py" />
+    <Compile Include="database\models.py" />
+    <Compile Include="database\__init__.py" />
+    <Compile Include="jobsscraping\items.py" />
+    <Compile Include="jobsscraping\pipelines.py" />
+    <Compile Include="jobsscraping\settings.py" />
+    <Compile Include="jobsscraping\spiders\base_spider.py" />
+    <Compile Include="jobsscraping\spiders\linkedin_spider.py" />
+    <Compile Include="jobsscraping\spiders\topcv_spider.py" />
+    <Compile Include="jobsscraping\spiders\topdev_spider.py" />
+    <Compile Include="jobsscraping\spiders\vietnamwork_spider.py" />
+    <Compile Include="jobsscraping\spiders\__init__.py" />
+    <Compile Include="jobsscraping\__init__.py" />
+    <Compile Include="worker\celery_app.py" />
+    <Compile Include="worker\tasks.py" />
+    <Compile Include="worker\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="api\" />
+    <Folder Include="api\routes\" />
+    <Folder Include="database\" />
+    <Folder Include="configs\" />
+    <Folder Include="jobsscraping\" />
+    <Folder Include="jobsscraping\spiders\" />
+    <Folder Include="jobsscraping\spiders\__pycache__\" />
+    <Folder Include="jobsscraping\__pycache__\" />
+    <Folder Include="worker\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appsettings.json" />
+    <Content Include="jobsscraping\spiders\__pycache__\base_spider.cpython-312.pyc" />
+    <Content Include="jobsscraping\spiders\__pycache__\linkedin_spider.cpython-312.pyc" />
+    <Content Include="jobsscraping\spiders\__pycache__\topcv_spider.cpython-312.pyc" />
+    <Content Include="jobsscraping\spiders\__pycache__\topdev_spider.cpython-312.pyc" />
+    <Content Include="jobsscraping\spiders\__pycache__\vietnamwork_spider.cpython-312.pyc" />
+    <Content Include="jobsscraping\spiders\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="jobsscraping\__pycache__\pipelines.cpython-312.pyc" />
+    <Content Include="jobsscraping\__pycache__\settings.cpython-312.pyc" />
+    <Content Include="jobsscraping\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.12</Version>
+      <Description>env (Python 3.12 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

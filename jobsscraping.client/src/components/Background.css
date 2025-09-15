@@ -1,0 +1,193 @@
+﻿.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    transition: background 0.5s ease;
+}
+
+.dark {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+    .dark .content-placeholder {
+        color: #fff;
+    }
+
+.light {
+    background: linear-gradient( 135deg, #a1c4fd 0%, #c2e9fb 25%, #fbc2eb 50%, #a1c4fd 75%, #c2e9fb 100% );
+    background-size: 200% 200%;
+    animation: gradient-move 15s ease infinite;
+}
+
+    .light .content-placeholder {
+        color: #333;
+    }
+
+.star {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: twinkle linear infinite;
+    opacity: 0;
+    transform: translateZ(0);
+}
+
+.dark .star {
+    opacity: inherit;
+}
+
+.planet {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(10px);
+    opacity: 0;
+    animation: float 20s linear infinite;
+}
+
+.dark .planet {
+    opacity: 0.3;
+}
+
+.light-particle {
+    position: absolute;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: float 15s linear infinite;
+    opacity: 0;
+}
+
+.light .light-particle {
+    opacity: 0.4;
+}
+
+.nebula {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(100, 43, 115, 0.3) 0%, rgba(34, 0, 80, 0) 70%);
+    mix-blend-mode: screen;
+    pointer-events: none;
+    opacity: 0;
+    animation: nebula-move 60s linear infinite;
+}
+
+.dark .nebula {
+    opacity: 1;
+}
+
+.lens-effect {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px) contrast(0.8);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: left 0.05s linear, top 0.05s linear;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.dark .lens-effect {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px) contrast(1.2);
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 0.9;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradient-move {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes nebula-move {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+
+
+.content-placeholder {
+    text-align: center;
+    z-index: 1;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.light .content-placeholder {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .content-placeholder {
+        max-width: 95%;
+    }
+
+
+
+    .lens-effect {
+        width: 20px;
+        height: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+}

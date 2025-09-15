@@ -1,0 +1,112 @@
+.theme-toggle {
+    position: sticky;
+    width: 60px;
+    height: 34px;
+    z-index: 1000;
+}
+
+.theme-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 34px;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.light .slider {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background: #fff;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.theme-toggle input:checked + .slider:before {
+    transform: translateX(26px);
+    background: #000;
+}
+
+.theme-toggle input:checked + .slider .moon {
+    opacity: 0;
+}
+
+.theme-toggle input:not(:checked) + .slider .sun {
+    opacity: 0;
+}
+
+.theme-toggle input:checked + .slider .sun {
+    opacity: 1;
+}
+
+.theme-toggle input:not(:checked) + .slider .moon {
+    opacity: 1;
+}
+
+.icon {
+    font-size: 18px;
+    transition: opacity 0.4s ease;
+}
+
+.light .icon {
+    color: #333;
+}
+
+.slider:hover {
+    transform: scale(1.05);
+}
+
+.moon::before {
+    content: "🌙";
+}
+
+.sun::before {
+    content: "☀️";
+}
+
+@media (max-width: 768px) {
+    .theme-toggle {
+        width: 50px;
+        height: 28px;
+    }
+
+    .slider:before {
+        height: 20px;
+        width: 20px;
+        left: 4px;
+        bottom: 4px;
+    }
+
+    .theme-toggle input:checked + .slider:before {
+        transform: translateX(22px);
+    }
+
+    .icon {
+        font-size: 14px;
+    }
+}

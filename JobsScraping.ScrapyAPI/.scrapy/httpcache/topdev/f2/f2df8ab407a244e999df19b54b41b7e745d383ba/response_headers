@@ -1,0 +1,12 @@
+Server: nginx
+Content-Type: application/json
+Vary: Accept-Encoding
+Vary: Origin
+Cache-Control: no-cache, private
+Date: Sun, 24 Aug 2025 16:25:45 GMT
+X-Ratelimit-Limit: 2000
+X-Ratelimit-Remaining: 1998
+Set-Cookie: TDSID=eyJpdiI6IlZYVVVyaVF2WSt6NXhrQWdRQ0QxZHc9PSIsInZhbHVlIjoiZnA0blUyRGFvenoyc1FxTkl4QVRaTGF6UmZYcXFIVWpsY0RoVHMya1FIcHBGRkY3TzJlUyswL3Q0bVVjNHBzSEJ5YW1xZWprUU95REZ3VmI1WmpMcDFQSWpoeTVmS1gzdk83a2M3c1UyMnBwQnI0M1UzaTk0RTROem9jdENFSTciLCJtYWMiOiIyYWI2NWNiM2Y1Y2NmNWNmMDEzYTUwMTZhNmQxZjg5NzlmOGExNWIxZTA0NzVlODUzNWM4NzJhYjA3MzY3YzE2IiwidGFnIjoiIn0%3D; expires=Tue, 25 Aug 2026 16:25:45 GMT; Max-Age=31622400; path=/; domain=.topdev.vn; secure; httponly; samesite=lax
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Content-Encoding: gzip

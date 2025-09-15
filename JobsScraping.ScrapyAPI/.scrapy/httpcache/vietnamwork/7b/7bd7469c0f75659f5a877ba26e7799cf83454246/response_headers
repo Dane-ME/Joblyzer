@@ -1,0 +1,15 @@
+Server: nginx
+Date: Sun, 24 Aug 2025 09:48:56 GMT
+Content-Type: text/html; charset=utf-8
+X-Powered-By: Express
+Content-Language: vi
+Set-Cookie: next-i18next=vi; path=/; expires=Mon, 24 Aug 2026 09:48:54 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Origin: *
+Etag: "1d39ef-NsqtSzUN/BHSSYEN0nLdGes+kb8"
+Cache-Control: private, no-cache, no-store, max-age=0, must-revalidate
+Vary: Accept-Encoding
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1

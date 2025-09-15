@@ -1,0 +1,95 @@
+﻿.taskbar {
+    display: flex;
+    position: fixed;
+    gap: inherit;
+    top: 20px;
+    left: 20px;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f2937; /* xám đen */
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: calc(94%);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+
+.btn-lang {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    background: #374151;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+    .btn-lang:hover {
+        background: #4b5563;
+    }
+
+.lang-menu {
+    position: absolute;
+    right: 70px;
+    top: 45px;
+    background: white;
+    color: black;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    overflow: hidden;
+    animation: fadeIn 0.2s ease-out;
+}
+
+    .lang-menu button {
+        display: block;
+        width: 100%;
+        padding: 8px 12px;
+        border: none;
+        background: white;
+        cursor: pointer;
+        text-align: left;
+    }
+
+        .lang-menu button:hover {
+            background: #f3f4f6;
+        }
+
+.btn-login {
+    padding: 8px 18px;
+    border-radius: 6px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+    .btn-login:hover {
+        background: #1d4ed8;
+    }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

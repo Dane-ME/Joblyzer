@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{a4bf134d-5462-4758-bb95-9897c580a422}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="jobsscraping.client\eslint.config.js" />
+    <Content Include="jobsscraping.client\index.html" />
+    <Content Include="jobsscraping.client\public\vite.svg" />
+    <Content Include="jobsscraping.client\src\App.css" />
+    <Content Include="jobsscraping.client\src\assets\react.svg" />
+    <Content Include="jobsscraping.client\src\index.css" />
+    <Content Include="JobsScraping.Server\obj\Debug\net8.0\staticwebassets.removed.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="jobsscraping.client" />
+    <Folder Include="jobsscraping.client\public" />
+    <Folder Include="jobsscraping.client\src" />
+    <Folder Include="jobsscraping.client\src\assets" />
+    <Folder Include="JobsScraping.Server\" />
+    <Folder Include="JobsScraping.Server\obj\" />
+    <Folder Include="JobsScraping.Server\obj\Debug\" />
+    <Folder Include="JobsScraping.Server\obj\Debug\net8.0" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
