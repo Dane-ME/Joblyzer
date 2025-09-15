@@ -1,6 +1,0 @@
-Referer: https://api.topdev.vn/td/v2/jobs?fields%5Bjob%5D=id,slug,title,salary,company,extra_skills,skills_str,skills_arr,skills_ids,job_types_str,job_levels_str,job_levels_arr,job_levels_ids,addresses,status_display,detail_url,job_url,salary,published,refreshed,applied,candidate,requirements_arr,packages,benefits,content,features,is_free,is_basic,is_basic_plus,is_distinction&fields%5Bcompany%5D=slug,tagline,addresses,skills_arr,industries_arr,industries_str,image_cover,image_galleries,benefits&page=1&locale=en_US&ordering=jobs_new
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
-Accept-Language: en
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-Accept-Encoding: gzip, deflate
-Cookie: sticky_cookie=web1; TDSID=eyJpdiI6Ik9lUjQ0Qnh3MkQ5U1lKb0p2RVFjdnc9PSIsInZhbHVlIjoiQ3dYZkRxeTVlbFhLZjZGL0VLb3ZSWGM4Z1JSVzZxNk1EUVdIR29KdmRLNXQ0YVRuV1hSc1lsbjNWaU8rMmtPQkkwT3NKZlFUNy8zUXpCRmFIR1l6NlZFdGROV1lOY0Z5bU5VMnFsU1JXckMvVUF2eUt0TXArczE5elEzWUI5c1ciLCJtYWMiOiIzNWU1ZDVlYTY3ZTczMWJiNTM5YTc4MmQwOTI4NzM3OTAxMWEzNWEwYzY4NzA3NmEwNDAwYjk1N2ZkNTRjY2UzIiwidGFnIjoiIn0%3D

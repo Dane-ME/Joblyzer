@@ -1,7 +1,0 @@
-Server: nginx
-Date: Sun, 24 Aug 2025 09:25:33 GMT
-Location: /viec-lam/front-end-developer-heligate-2-2044734?src=topdev_search&medium=jobhighlight
-Set-Cookie: topdev_locale=vi; Path=/; Domain=.topdev.vn
-Set-Cookie: flavor=choco;  Samesite=None; Secure
-X-Device-Type: desktop
-X-Frame-Options: SAMEORIGIN
